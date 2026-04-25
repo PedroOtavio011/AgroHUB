@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro-Hub | Poço Fundo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Agro-Hub 🚜</h1>
+        <p>Monitoramento de Safra e Mercado - Poço Fundo e Região</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Cotação do Café</h2>
+            <div id="lista-cotacoes">Carregando preços...</div>
+            <button class="btn-atualizar" onclick="buscarDados()">Atualizar Preços</button>
+        </div>
+
+        <div class="card">
+            <h2>Lista de Cooperativas</h2>
+            <div id="lista-cooperativas">Carregando locais...</div>
+        </div>
+
+        <div class="card" style="grid-column: span 2; min-height: 450px;">
+            <h2>Mapa de Localização</h2>
+            <div id="map-container" style="height: 400px; width: 100%; border-radius: 8px;"></div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
